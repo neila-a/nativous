@@ -1,0 +1,60 @@
+{
+    "name": "nativous",
+    "version": "0.1.0",
+    "description": "The library for rendering JSX directly to the DOM.",
+    "main": "dist/index.js",
+    "directories": {
+        "test": "tests"
+    },
+    "scripts": {
+        "test": "jest",
+        "lint": "eslint --fix",
+        "build": "tsup"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@github.com/neila-a/nativous.git"
+    },
+    "types": "dist/index.d.ts",
+    "keywords": [
+        "javascript",
+        "library",
+        "ui",
+        "frontend"
+    ],
+    "author": {
+        "name": "Neila",
+        "email": "neilaspace@outlook.com",
+        "url": "https://neilasite.netlify.app/"
+    },
+    "license": "LGPL-3.0-or-later",
+    "bugs": {
+        "url": "https://github.com/neila-a/nativous/issues"
+    },
+    "homepage": "https://github.com/neila-a/nativous#readme",
+    "packageManager": "pnpm@9.5.0-beta.0+sha256.bd91cddc9b205c94b5bf0380cec8fc8e4b1dde7b8c5191732f3d4e73848e860e",
+    "devDependencies": {
+        "@types/jest": "^29.5.12",
+        "eslint": "^9.6.0",
+        "jest": "^29.7.0",
+        "ts-jest": "^29.1.5"
+    },
+    "jest": {
+        "rootDir": "tests",
+        "transform": {
+            "^.+\\.tsx?$": "ts-jest"
+        },
+        "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.tsx?$",
+        "moduleFileExtensions": [
+            "ts",
+            "tsx",
+            "js",
+            "jsx",
+            "json",
+            "node"
+        ]
+    },
+    "dependencies": {
+        "tsup": "^8.1.0"
+    }
+}
