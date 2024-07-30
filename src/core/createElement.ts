@@ -187,6 +187,11 @@ function createElement(
                             signal: value[1]
                         })
                     }
+                } else if (prop === "style" && typeof value === "object" && value !== null) {
+                    // css
+                    for (const item in value) {
+                        element.style[item as keyof WritableKeys<CSSStyleDeclaration>] = value[item];
+                    }
                 } else {
                     // @ts-ignore
                     element[prop] = value;
