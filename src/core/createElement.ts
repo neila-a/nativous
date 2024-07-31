@@ -1,9 +1,8 @@
 import {
     elementTypes
 } from "../symbols";
-import flatNativousNode, {
-    checkIsSuspendedNode
-} from "../tools/flatNativousNode";
+import flatNativousNode from "../tools/flatNativousNode";
+import checkIsSuspendedNode from "../tools/checkIsSuspendedNode";
 import procNode from "../tools/procNode";
 import {
     Fragment,

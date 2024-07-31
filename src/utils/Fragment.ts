@@ -1,6 +1,5 @@
-import flatNativousNode, {
-    checkIsSuspendedNode
-} from "../tools/flatNativousNode";
+import flatNativousNode from "../tools/flatNativousNode";
+import checkIsSuspendedNode from "../tools/checkIsSuspendedNode";
 import {
     NativousNode,
     suspended,

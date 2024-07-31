@@ -1,3 +1,5 @@
+import checkIsIterator from "./checkIsIterator";
+
 /**
  * Flatten an array indefinitely.
  */
@@ -6,25 +8,19 @@ export default function flatten<T>(array: Iterable<T>) {
     $flatten(array, result);
     return result;
 }
+
 /**
  * Internal flatten function recursively passes `result`.
  */
 function $flatten<T>(array: Iterable<T>, result: T[]) {
     const arr = Array.from(array);
-    for (let i = 0; i < arr.length; i++) {
-        let value = arr[i];
+    arr.forEach(value => {
         if (typeof value === "string") {
             result.push(value);
-        } else if (value !== null) {
-            if (typeof value === "object") {
-                if (Symbol.iterator in value) {
-                    if (typeof value[Symbol.iterator] === "function") {
-                        $flatten(value as Iterable<T>, result);
-                    }
-                }
-            }
+        } else if (checkIsIterator(value)) {
+            $flatten(value, result);
         } else {
             result.push(value);
         }
-    }
+    });
 }

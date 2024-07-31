@@ -2,6 +2,8 @@ const config = {
     "transform": {
         "^.+\\.tsx?$": "ts-jest"
     },
+    collectCoverage: true,
+    collectCoverageFrom: ["./src/**"],
     "testRegex": "(/tests/.*|(\\.|/)(test|spec))\\.tsx?$",
     "moduleFileExtensions": [
         "ts",

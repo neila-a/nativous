@@ -34,9 +34,11 @@
     "homepage": "https://github.com/neila-a/nativous#readme",
     "packageManager": "pnpm@9.5.0+sha256.dbdf5961c32909fb030595a9daa1dae720162e658609a8f92f2fa99835510ca5",
     "devDependencies": {
+        "@testing-library/jest-dom": "^6.4.8",
         "@types/jest": "^29.5.12",
         "eslint": "^9.8.0",
         "jest": "^29.7.0",
+        "jest-environment-jsdom": "^29.7.0",
         "ts-jest": "^29.2.3",
         "ts-node": "^10.9.2",
         "tsup": "^8.2.3"
