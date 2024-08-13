@@ -23,4 +23,4 @@ document.body.appendChild(<Hello name="Taylor" />);
 
 This example will render "Hello, Taylor!" into body of the page.
 
-## [API Reference](./docs/API_Reference/README.md)
+## [API Reference](./wiki)
