@@ -1,35 +1,27 @@
 # Lifecycle
 
-## `useOnMount`
+Use `addLifecycleEvent` to add lifecycle hooks.
 
-The `useOnMount` hook returns a `Promise` that is fulfilled when the component is first rendered.
+## Mount Event
+
+The mount event is triggered when the component is **first** rendered.
 
 ```tsx
-import {
-    useOnMount
-} from "nativous";
 function Foo() {
-    const onMountPromise = useOnMount();
-    onMountPromise.then(() => {
-        console.log("Foo  is first rendered! ");
+    addLifecycleEvent("mount", () => {
+        // ...
     });
-    return <p>Foo</p>;
 }
 ```
 
-## `useOnUnMount`
+## Unmount Event
 
-The `useOnUnmount` hook returns a Promise that is fulfilled when the component is about to be unmounted.
+The Unmount event is triggered when a component is about to be unmounted.
 
 ```tsx
-import {
-    useOnUnount
-} from "nativous";
 function Foo() {
-    const onUnmountPromise = useOnUnmount();
-    onUnmountPromise.then(() => {
-        console.log("Foo is about to be unmounted! ");
+    addLifecycleEvent("unmount", () => {
+        // ...
     });
-    return <p>Foo</p>;
 }
 ```
