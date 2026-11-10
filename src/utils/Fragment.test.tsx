@@ -1,6 +1,6 @@
 /**
  * @jest-environment jsdom
-*/
+ */
 import * as React from "../core";
 import {
     createElement,

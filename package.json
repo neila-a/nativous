@@ -1,5 +1,5 @@
 {
-    "name": "nativous",
+    "name": "@neila-a/nativous",
     "version": "0.1.0",
     "description": "The library for rendering JSX directly to the DOM.",
     "main": "dist/index.js",
@@ -11,10 +11,7 @@
         "lint": "eslint --fix",
         "build": "tsup"
     },
-    "repository": {
-        "type": "git",
-        "url": "git+ssh://git@github.com/neila-a/nativous.git"
-    },
+    "repository": "https://github.com/neila-a/nativous.git",
     "types": "dist/index.d.ts",
     "keywords": [
         "javascript",
@@ -28,6 +25,9 @@
         "url": "https://neilasite.netlify.app/"
     },
     "license": "LGPL-3.0-or-later",
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com"
+    },
     "bugs": {
         "url": "https://github.com/neila-a/nativous/issues"
     },
