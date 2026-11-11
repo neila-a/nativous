@@ -1,7 +1,7 @@
 # Nativous
 
 > [!IMPORTANT]  
-> https://github.com/alex-kinokon/jsx-dom is a better alternative to this mod.
+> https://github.com/alex-kinokon/jsx-dom is a better alternative to this library.
 
 Nativous is the library for rendering JSX directly to the DOM.
 
